@@ -1,0 +1,10 @@
+F:\Informatica\Progetti C#\Form\first\first\bin\Debug\first.exe.config
+F:\Informatica\Progetti C#\Form\first\first\bin\Debug\first.exe
+F:\Informatica\Progetti C#\Form\first\first\bin\Debug\first.pdb
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.csprojAssemblyReference.cache
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.Form1.resources
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.Properties.Resources.resources
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.csproj.GenerateResource.cache
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.csproj.CoreCompileInputs.cache
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.exe
+F:\Informatica\Progetti C#\Form\first\first\obj\Debug\first.pdb
