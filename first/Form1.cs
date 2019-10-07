@@ -1,4 +1,5 @@
-﻿using System;
+//using GNU GENERAL PUBLIC LICENSE; THIS SOFTWARE IS OPEN SOURCE. REDISTRIBUTE IT NAMING THE ORIGINAL AUTHOR IN THE DESCRIPTION.
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
