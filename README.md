@@ -1,5 +1,4 @@
 # jonio-csharp-browser
-browser csharp
 
 Jonio CSharp Browser
 
