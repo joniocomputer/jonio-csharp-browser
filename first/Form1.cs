@@ -17,17 +17,14 @@ namespace first
         {
             InitializeComponent();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             webBrowser1.Refresh();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             webBrowser1.GoBack();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             webBrowser1.GoForward();
@@ -37,10 +34,8 @@ namespace first
         {
             webBrowser1.Stop();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
-
             if (textBox1.Text.Contains(".it") || textBox1.Text.Contains(".com") || textBox1.Text.Contains(".co.uk") || textBox1.Text.Contains(".us") || textBox1.Text.Contains(".es"))
             {
                 webBrowser1.Navigate(textBox1.Text);
@@ -50,12 +45,10 @@ namespace first
                 webBrowser1.Navigate("https://www.google.it/search?source=hp&ei=cYWUXfWtBo7dwALp3LLACA&q=" + textBox1.Text);
             }
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -71,7 +64,6 @@ namespace first
                 }
             }
         }
-
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             if(webBrowser1.CanGoBack == true)
@@ -102,7 +94,6 @@ namespace first
                 textBox1.ForeColor = Color.Black;
             }
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             if(panel1.Visible == true)
@@ -121,28 +112,22 @@ namespace first
             {
                 foreach (string files in Directory.GetFiles("/csb/"))
                 {
-                    
-                    listBox1.Items.Add(System.IO.Path.GetFileNameWithoutExtension(files));
-                  
+                    listBox1.Items.Add(System.IO.Path.GetFileNameWithoutExtension(files));      
                 }
-
             }
             catch
             {
 
             }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             if(Directory.Exists("/csb") == false)
             {
                 Directory.CreateDirectory("/csb");
             }
-            preferiti();
-           
+            preferiti(); 
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
             File.WriteAllText("/csb/" + textBox2.Text +".bm", Convert.ToString(webBrowser1.Url)); //csb/google --> "google.it"
@@ -151,7 +136,6 @@ namespace first
             textBox2.Text = string.Empty;
 
         }
-
         private void button8_Click(object sender, EventArgs e)
         {
                 File.Delete("/csb/" + listBox1.SelectedItem +".bm");
@@ -160,7 +144,6 @@ namespace first
             MessageBox.Show("Preferito cancellato");
             
         }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listBox2.SelectedItem = listBox1.SelectedItem;
@@ -170,7 +153,6 @@ namespace first
         {
             listBox1.SelectedItem = listBox2.SelectedItem;
         }
-
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
            try
@@ -183,13 +165,8 @@ namespace first
             catch
             {
 
-            }
-           
-
-           
-            
+            }         
         }
-
         private void rimuoviDaiPreferitiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             File.Delete("/csb/" + listBox1.SelectedItem + ".bm");
